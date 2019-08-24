@@ -1,0 +1,6 @@
+<h3>My legends</h3>
+<ul class="legends">
+    <li *ngFor="let legend of legends" routerLink="/detail/{{legend.id}}">
+        <span class="badge">{{legend.id}}</span>{{legend.name}}
+    </li>
+</ul>
